@@ -10,6 +10,11 @@ const Quienes = () => {
           Sorry, your browser does not support HTML5 video.
       </video>
       <header className="viewport-header2">
+        <span className="text-header3">
+          <p>
+            Combinamos los últimos avances en Machine Learning para crear mejores soluciones
+          </p>
+        </span>
         <span className="text-header4">
           <h4>
             <img src={logo} className="logo" alt="logo" />Predicción de Demanda
@@ -37,11 +42,7 @@ const Quienes = () => {
           </h4>
 
         </span>
-        <span className="text-header3">
-          <p>
-            Combinamos los últimos avances en Machine Learning para crear mejores soluciones
-          </p>
-        </span>
+        
       </header>
     </div>
   )
