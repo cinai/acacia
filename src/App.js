@@ -6,41 +6,21 @@ import Quienes from './components/Quienes';
 
 class App extends Component {
   render() {
-    let width = window.innerWidth;
-    if (width > 708) {
-      return (
-        <div className="App">
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
+    return (
+      <div className="App">
+        <div className="App-header">
+          <div id="App-logo">
+            <img src={logo} className="logo-image" alt="logo" />
             Acacia
           </div>
-          <Portada/>
-          <div className="Bar"></div>
-          <Quienes/>
+          <ul class="navigation">
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Nosotros</a></li>
+          </ul>
         </div>
-      );
-    }
-    else {
-      return (
-        <div className="App">
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            Acacia
-          </div>
-        <header className="viewport-header">
-          <span className="text-header5">
-            <h3>Machine Learning para<br/> Business Intelligence </h3>
-          </span>
-        </header>
-        <header className="viewport-header3">
-          <span className="text-header6">
-            AcacIA ofrece soluciones de softwares basados en Inteligencia Artificial 
-            que permiten la automatización y optimización de distintos procesos operacionales de su compañía, apoyando y mejorando la toma de decisiones.
-          </span>
-        </header>
-        </div>
-      );
-    }
+        <Portada/>
+      </div>
+    );
   }
 } 
 
