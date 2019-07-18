@@ -1,11 +1,14 @@
 .App {
   text-align: center;
+  background-color: #f4f4f4;
 }
 
 #App-logo {
   font-size: 70px;
   flex: 1;
   display: inline-flex;
+  justify-content: left;
+  padding-left: 20px;
 }
 
 .logo-image {
@@ -15,13 +18,14 @@
 .App-header {
   background-color: #f4f4f4;
   z-index: 999;
-  height: 80px;
   width: 100%;
-  padding: 20px;
   color: grey;
   font-family: Georgia;
+  padding-top: 20px;
+  padding-bottom: 10px;
   position: fixed;
   display: flex;
+  flex: wrap;
 }
 
 .navigation {
@@ -30,38 +34,37 @@
   color: grey;
   font-size: 25px;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 40px;
+  flex: flex-end;
+  justify-content: right;
 }
 
 .navigation a {
   color: grey;
   text-decoration: none;
-  padding: 1em;
+  padding: 40px;
 }
+
 .navigation a:hover {
   text-shadow: 0.1px 0.2px;
 }
 
-.Bar {
+
+.primer{
   position: relative;
-  order: 2;
-  background-color: #f4f4f4;
-  z-index: 998;
-  width: 100%; /* Full width */
-  height: 10vw;
+  width: 100%;
   flex: 1;
-  display: flex;
+  display: flex; 
+  background-color: #f4f4f4;
 }
 
 .viewport-header {
   position: relative;
   width: 100%;
-  order: 1;
   background-color: rgba(95, 158, 160, 0.685);
-  justify-content: left;
-  padding: 3%;
+  padding: 1%;
   display: flex;
+  margin-top: 90px;
+  align-items: center;
 }
 
 .text-header1{
@@ -70,11 +73,10 @@
   color: #f4f4f4;
   text-align: left;
   font-family: Georgia;
-  font-stretch: extra-expanded;
   flex: 3;
   display: flex;
-  align-items: center;
-  padding: 2vw;
+  padding: 4vw;
+  justify-content: left;
 }
 
 .text-header2{
@@ -82,73 +84,10 @@
   color: #dddddd;
   text-align: left;
   font-family: Georgia;
-  padding: 5%;
-  margin-top: 5%;
-  background-color: rgba(62, 119, 121, 0.664);
+  background-color: rgba(62, 119, 121, 0.788);
   display: flex;
+  padding: 4%;
   flex: 1;
-}
-
-@media (max-width: 767px) {
-  .App-header {
-    display: block;
-    height: 30vw;
-  }
-  #App-logo {
-    font-size: 15vw;
-    height: 7vw;
-    flex: 1;
-    display: inline-flex;
-    padding-right: 20px;
-  }
-  .logo-image {
-    height: 17vw;
-  }
-  
-  .navigation {
-    list-style: none;
-    flex: 1;
-    color: grey;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-  }
-    
-  .primer{
-    position: relative;
-    flex: 1;
-    display: flex; 
-    flex-wrap: wrap;
-  }
-
-  .text-header1{
-    background-color: rgba(95, 158, 160, 1);
-    color: #f4f4f4;
-    font-size: 8vw;
-    text-align: left;
-    font-family: Georgia;
-    display: flex;
-    flex: 1;
-    text-align: right;
-    padding: 6vw;
-  }
-  
-  .text-header2{
-    margin-top: 160px;
-    font-size: 10vw;
-    color: #dddddd;
-    text-align: left;
-    font-family: Georgia;
-    font-stretch: extra-expanded;
-    padding: 5%;
-    background-color: rgba(62, 119, 121, 1);
-    display: flex;
-    flex: 1;
-  }
-}
-
-.App-intro {
-  font-size: large;
 }
 
 .video {
@@ -159,62 +98,157 @@
   width: 100%;
 }
 
+.Bar {
+  position: relative;
+  background-color: #f4f4f4;
+  z-index: 998;
+  width: 100%; /* Full width */
+  height: 9vw;
+  flex: 1;
+  display: flex;
+}
+
+.segundo{
+  position: relative;
+  background-color: rgb(253, 252, 252);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.viewport-header2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  font-family: Georgia;
+  justify-content: left;
+}
+
+.text-header3{
+  font-size: 3vw;
+  color: rgb(253, 252, 252);
+  text-align: left;
+  padding: 5%;
+  padding-left: 40px;
+  background-color: rgb(36, 98, 100);
+  flex: 1;
+}
+
+.text-header4{
+  font-size: 2vw;
+  color: rgb(66, 62, 62);;
+  color: rgb(253, 252, 252);
+  text-align: left;
+  padding: 45px;
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo{
+  height: 3vw;
+}
+
+.card {
+  background-color: rgb(35, 128, 131);
+  border-radius: 2vw;
+  margin: 10px;
+  max-width: 20vw;
+  flex: 1;
+  padding: 1vw;
+  transition: all .5s ease-in-out;
+  justify-content: center;
+}
+
+.card h4 {
+  display: inline-flex;
+}
+
+.card:hover {
+  transform: scale(1.06);
+}
+
+.prueba{
+  text-align: right;
+  padding-left:10vw;
+  float: right;
+  font-size: 2vw;
+  padding: 1vw;
+}
+
+@media (max-width: 767px) {
+  .App-header {
+    display: block;
+    width: 100%;
+  }
+  #App-logo {
+    font-size: 12vw;
+    padding-left: 0px;
+  }
+  .logo-image {
+    height: 14vw;
+  }
+  
+  .navigation {
+    list-style: none;
+    color: grey;
+    font-size: 25px;
+    justify-content: center;
+    padding: 0px;
+  }
+    
+  .primer{
+    position: relative;
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+    flex: 1;
+    width: 100%;
+  }
+
+  .text-header1{
+    background-color: rgba(95, 158, 160, 1);
+    color: #f4f4f4;
+    font-size: 6vw;
+    text-align: left;
+    font-family: Georgia;
+    display: flex;
+    flex: 1;
+    text-align: right;
+    padding: 6vw;
+  }
+  
+  .text-header2{
+    margin-top: 140px;
+    font-size: 8vw;
+    color: #dddddd;
+    text-align: left;
+    font-family: Georgia;
+    font-stretch: extra-expanded;
+    padding: 4%;
+    background-color: rgba(62, 119, 121, 1);
+    display: flex;
+    flex: 1;
+  }
+  .Bar {
+    z-index: 998;
+    width: 100%; /* Full width */
+    height: 10vw;
+    flex: 1;
+    display: flex;
+  }
+}
+
+.App-intro {
+  font-size: large;
+}
+
 .video2 {
   width: 100%;
   position: absolute;
   left: 0;
 }
 
-.viewport-header2 {
-  position: relative;
-  width: 100vw;
-  height: 56vw;
-  display: flex;
-  background-color: rgba(185, 185, 185, 0.486);
-  justify-content: left;
-  padding-bottom: 10%;
-}
-
-.text-header3{
-  font-size: 54px;
-  width: 30%;
-  height: 70%;
-  color: #dddddd;
-  text-align: left;
-  font-family: Georgia;
-  font-stretch: extra-expanded;
-  padding: 5%;
-  padding-left: 40px;
-  background-color: rgba(62, 119, 121, 0.555);
-}
-
-.text-header4{
-  font-size: 32px;
-  height: 100%;
-  width: 70%;
-  color: #dddddd;
-  text-align: left;
-  font-family: Georgia;
-  font-stretch: extra-expanded;
-  padding: 5%;
-}
-
-.primer{
-  position: relative;
-  flex: 1;
-  display: flex; 
-}
-
-.segundo{
-  position: relative;
-}
-.prueba{
-  text-align: right;
-  padding-left:10vw;
-  float: right;
-  font-size: 26px;
-  padding: 1vw;
-}
 
 .text-header5{
   font-size: 12vw;

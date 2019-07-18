@@ -3,6 +3,7 @@ import logo from './images/flor.svg';
 import './App.css';
 import Portada from './components/Portada';
 import Quienes from './components/Quienes';
+import Servicios from './components/Servicios';
 
 class App extends Component {
   render() {
@@ -14,11 +15,12 @@ class App extends Component {
             Acacia
           </div>
           <ul class="navigation">
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Nosotros</a></li>
+            <li><a href="#Servicios">Servicios</a></li>
+            <li><a href="#Nosotros">Nosotros</a></li>
           </ul>
         </div>
         <Portada/>
+        <Servicios/>
       </div>
     );
   }
