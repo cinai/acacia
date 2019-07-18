@@ -3,7 +3,7 @@ import logo from './images/flor.svg';
 import './App.css';
 import Portada from './components/Portada';
 import Quienes from './components/Quienes';
-import Servicios from './components/Servicios';
+import Servicios from './Components/Servicios';
 
 class App extends Component {
   render() {
