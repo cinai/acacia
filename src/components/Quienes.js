@@ -26,9 +26,12 @@ const Quienes = () => {
           <img src={abelino} className="foto" alt="Abelino Jimenez" />Abelino Jimenez
           </h4>
           <span className="prueba">
-          PhD Electrical and Computer Engineering. Carnegie Mellon University
-          Msc Electrical and Computer Engineering. Carnegie Mellon University
-          Ingeniero Civil Matemático. Universidad de Chile
+          PhD Electrical and Computer Engineering. <br/>
+          Carnegie Mellon University<br/>
+          Msc Electrical and Computer Engineering. <br/>
+          Carnegie Mellon University<br/>
+          Ingeniero Civil Matemático. <br/>
+          Universidad de Chile
 
           </span>
         </div>
@@ -37,8 +40,10 @@ const Quienes = () => {
           <img src={catalina} className="foto" alt="Catalina Espinoza" />Catalina Espinoza
           </h4>
           <span className="prueba">
-          Magíster en Ciencias mención Computación. Universidad de Chile
-          Ingeniera Civil en Computación. Universidad de Chile
+          Magíster en Ciencias mención Computación. <br/>
+          Universidad de Chile<br/>
+          Ingeniera Civil en Computación. <br/>
+          Universidad de Chile
           </span>
         </div>
       </div>
