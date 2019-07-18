@@ -84,7 +84,7 @@
   color: #dddddd;
   text-align: left;
   font-family: Georgia;
-  background-color: rgba(62, 119, 121, 0.788);
+  background-color: rgba(36, 98, 100,0.8);
   display: flex;
   padding: 4%;
   flex: 1;
@@ -103,9 +103,16 @@
   background-color: #f4f4f4;
   z-index: 998;
   width: 100%; /* Full width */
-  height: 9vw;
+  height: 7vw;
   flex: 1;
   display: flex;
+  font-size: 1vw;
+  font-weight: bold;
+  text-align: center;
+  justify-content: right;
+}
+.footnote {
+  padding: 4%;
 }
 
 .segundo{
@@ -149,6 +156,26 @@
   height: 3vw;
 }
 
+.foto{
+  height: 14vw;
+  border-radius: 8vw;
+}
+
+.integrantes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card2 {
+  transition: all .5s ease-in-out;
+  justify-content: center;
+  display: flex;
+  flex: 2;
+  flex-wrap: wrap;
+  margin: 10px;
+  max-width: 40vw;
+  border-radius: 3vw;
+}
 .card {
   background-color: rgb(35, 128, 131);
   border-radius: 2vw;
@@ -162,20 +189,69 @@
 
 .card h4 {
   display: inline-flex;
+  align-content: center;
 }
 
 .card:hover {
   transform: scale(1.06);
 }
 
-.prueba{
-  text-align: right;
-  padding-left:10vw;
-  float: right;
-  font-size: 2vw;
-  padding: 1vw;
+.card2:hover {
+  transform: scale(1.06);
+  background-color: rgba(11, 73, 75, 0.089);
 }
 
+.card2 h4 {
+  display: flexbox;
+  font-size: 2vw;
+  color: rgba(36, 98, 100,1)
+}
+
+.prueba{
+  text-align: right;
+  float: right;
+  font-size: 1.5vw;
+  padding-left: 1vw;
+  padding-right: 2vw;
+  padding-bottom: 2vw;
+  flex: 1;
+}
+
+.tercero {
+  background-color: rgb(253, 252, 252);
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2vw;
+}
+
+.titulo {
+  width: 100%;
+  flex: 3;
+}
+
+.tercero h5 {
+  font-size: 3vw;
+  background-color: rgb(35, 128, 131);
+  color: rgb(253, 252, 252);
+  font-style: italic;
+  rotate: 10px;
+  width: 30vw;
+  padding: 2vw;
+}
+
+.texto {
+  width: 100%;;
+  flex: 4;
+  padding: 4vw;
+}
+
+.texto p {
+  font-size: 2vw;
+  max-width: 60vw;
+  color: rgb(66, 62, 62);
+  padding: 1vw;
+
+}
 @media (max-width: 767px) {
   .App-header {
     display: block;
@@ -230,12 +306,17 @@
     display: flex;
     flex: 1;
   }
+
   .Bar {
     z-index: 998;
     width: 100%; /* Full width */
     height: 10vw;
     flex: 1;
     display: flex;
+    align-content: flex-end;
+  }
+  .footnote {
+    padding: 2%;
   }
 }
 

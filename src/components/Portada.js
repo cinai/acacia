@@ -33,7 +33,6 @@ const Portada = () => {
                   </span>
                 </header>
               </div>
-              <div className="Bar"></div>
             </div>
           )
         }

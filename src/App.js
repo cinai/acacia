@@ -21,6 +21,9 @@ class App extends Component {
         </div>
         <Portada/>
         <Servicios/>
+        <Quienes/>
+    
+        <div className="Bar"><div className="footnote">Acacia SpA<br/>2019</div></div>
       </div>
     );
   }
