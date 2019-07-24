@@ -4,6 +4,7 @@ import logo from '../images/flor.svg';
 const Servicios = () => {
   return (
     <div  id="Servicios">
+      <div className="Bar"></div>
       <div className="segundo">
       <header className="viewport-header2">
         <span className="text-header3">

@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: rgb(253, 252, 252);
 }
 
 #App-logo {
@@ -16,12 +20,12 @@
 }
 
 .App-header {
-  background-color: #f4f4f4;
+  background-color: rgb(253, 252, 252);
   z-index: 999;
   width: 100%;
   color: grey;
   font-family: Georgia;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 10px;
   position: fixed;
   display: flex;
@@ -101,7 +105,7 @@
 
 .Bar {
   position: relative;
-  background-color: #f4f4f4;
+  background-color: rgb(253, 252, 252);
   z-index: 998;
   width: 100%; /* Full width */
   height: 7vw;

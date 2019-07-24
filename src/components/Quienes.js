@@ -5,6 +5,7 @@ import abelino from '../images/abelino.jpg';
 const Quienes = () => {
   return (
     <div id="Nosotros">
+      <div className="Bar"></div>
       <div className="tercero">
         <div className="titulo"><h5>Nosotros</h5></div>
         <div className="texto">
