@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import logo from './images/flor.svg';
 import './App.css';
-import Portada from './Components/Portada';
-import Quienes from './Components/Quienes';
-import Servicios from './Components/Servicios';
 
 class App extends Component {
   render() {
@@ -19,10 +16,6 @@ class App extends Component {
             <li><a href="#Nosotros">Nosotros</a></li>
           </ul>
         </div>
-        <Portada/>
-        <Servicios/>
-        <Quienes/>
-    
         <div className="Bar"><div className="footnote">Acacia SpA<br/>2019</div></div>
       </div>
     );
