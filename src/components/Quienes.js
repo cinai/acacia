@@ -45,6 +45,9 @@ const Quienes = () => {
             Universidad de Chile<br/>
             Ingeniera Civil en Computación. <br/>
             Universidad de Chile
+            <br/>
+            <br/>
+            <br/>
             </span>
           </div>
         </div>

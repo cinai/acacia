@@ -5,28 +5,29 @@ html {
 .App {
   text-align: center;
   background-color: rgb(253, 252, 252);
+  font-family: 'Poppins', sans-serif;
 }
 
 #App-logo {
-  font-size: 70px;
-  flex: 1;
+  font-size: 50px;
+  flex: 4;
   display: inline-flex;
   justify-content: left;
   padding-left: 20px;
+  display: flex;
 }
 
 .logo-image {
-  height: 80px;
+  height: 60px;
 }
 
 .App-header {
-  background-color: rgb(253, 252, 252);
+  background-color: #ffffff;
   z-index: 999;
   width: 100%;
   color: grey;
-  font-family: Georgia;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  font-family:  'Poppins', sans-serif;
+  padding-top: 10px;
   position: fixed;
   display: flex;
   flex: wrap;
@@ -41,15 +42,21 @@ html {
   display: flex;
   flex: flex-end;
   justify-content: right;
+  padding-right: 30px;
 }
 
 .navigation a {
   color: grey;
   text-decoration: none;
-  padding: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.navigation a:hover {
+.navigation li {
+  flex: 1;
+}
+.navigation li:hover {
+  border-bottom: 5px solid #ffb300;
   text-shadow: 0.1px 0.2px;
 }
 
@@ -65,7 +72,7 @@ html {
 .viewport-header {
   position: relative;
   width: 100%;
-  background-color: rgba(95, 158, 160, 0.685);
+  background-color: #00897bc5;
   padding: 1%;
   display: flex;
   margin-top: 90px;
@@ -77,19 +84,20 @@ html {
   width: 100%;
   color: #f4f4f4;
   text-align: left;
-  font-family: Georgia;
+  font-family: 'Poppins', sans-serif;
   flex: 3;
   display: flex;
-  padding: 4vw;
+  padding: 7vw;
   justify-content: left;
+  text-align: center;
 }
 
 .text-header2{
   font-size: 3.5vw;
-  color: #dddddd;
+  color: #ffff;
   text-align: left;
   font-family: Georgia;
-  background-color: rgba(36, 98, 100,0.8);
+  background-color: #005b4fcc;
   display: flex;
   padding: 4%;
   flex: 1;
@@ -133,15 +141,17 @@ html {
   display: flex;
   font-family: Georgia;
   justify-content: left;
+  background-color: #00897b;
 }
 
 .text-header3{
   font-size: 3vw;
-  color: rgb(253, 252, 252);
+  font-style: italic;
+  color: rgb(255, 255, 255);
   text-align: left;
   padding: 5%;
   padding-left: 40px;
-  background-color: rgb(36, 98, 100);
+  background-color: #ffb300;
   flex: 1;
 }
 
@@ -182,7 +192,7 @@ html {
   border-radius: 3vw;
 }
 .card {
-  background-color: rgb(35, 128, 131);
+  background-color: #00897b;
   border-radius: 2vw;
   margin: 10px;
   max-width: 20vw;
@@ -202,14 +212,13 @@ html {
 }
 
 .card2:hover {
-  transform: scale(1.06);
-  background-color: rgba(11, 73, 75, 0.089);
 }
 
 .card2 h4 {
   display: flexbox;
   font-size: 2vw;
-  color: rgba(36, 98, 100,1)
+  color: #005b4f;
+  border-bottom: 4px solid #ffb300;
 }
 
 .prueba{
@@ -236,7 +245,7 @@ html {
 
 .tercero h5 {
   font-size: 3vw;
-  background-color: rgb(35, 128, 131);
+  background-color: #00897b;
   color: rgb(253, 252, 252);
   font-style: italic;
   rotate: 10px;
@@ -315,7 +324,7 @@ html {
   .Bar {
     z-index: 998;
     width: 100%; /* Full width */
-    height: 10vw;
+    height: 9vw;
     flex: 1;
     display: flex;
     align-content: flex-end;
@@ -323,6 +332,7 @@ html {
   .footnote {
     padding: 2%;
     color: rgba(11, 73, 75, 0.089);
+    background-color: rgb(253, 252, 252);
   }
 }
 

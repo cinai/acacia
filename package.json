@@ -6,7 +6,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-media": "^1.9.2",
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {},
   "scripts": {
