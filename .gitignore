@@ -10,6 +10,8 @@
 /build
 
 # misc
+src/images/others
+src/videos/others
 .DS_Store
 .env
 npm-debug.log*

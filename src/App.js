@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './images/flor.svg';
 import './App.css';
-import Portada from './components/Portada';
-import Quienes from './components/Quienes';
+import Portada from './Components/Portada';
+import Quienes from './Components/Quienes';
 import Servicios from './Components/Servicios';
 
 class App extends Component {
