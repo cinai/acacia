@@ -211,9 +211,6 @@ html {
   transform: scale(1.06);
 }
 
-.card2:hover {
-}
-
 .card2 h4 {
   display: flexbox;
   font-size: 2vw;
@@ -272,7 +269,8 @@ html {
     width: 100%;
   }
   #App-logo {
-    font-size: 12vw;
+    font-size: 5vh;
+    justify-content: center;
     padding-left: 0px;
   }
   .logo-image {
@@ -282,7 +280,7 @@ html {
   .navigation {
     list-style: none;
     color: grey;
-    font-size: 25px;
+    font-size: 2vh;
     justify-content: center;
     padding: 0px;
   }
@@ -297,7 +295,7 @@ html {
   }
 
   .text-header1{
-    background-color: rgba(95, 158, 160, 1);
+    background-color: #00897b;
     color: #f4f4f4;
     font-size: 6vw;
     text-align: left;
@@ -316,7 +314,7 @@ html {
     font-family: Georgia;
     font-stretch: extra-expanded;
     padding: 4%;
-    background-color: rgba(62, 119, 121, 1);
+    background-color: #005b4f;
     display: flex;
     flex: 1;
   }
@@ -324,15 +322,71 @@ html {
   .Bar {
     z-index: 998;
     width: 100%; /* Full width */
-    height: 9vw;
+    height: 14vh;
     flex: 1;
     display: flex;
     align-content: flex-end;
   }
   .footnote {
-    padding: 2%;
-    color: rgba(11, 73, 75, 0.089);
-    background-color: rgb(253, 252, 252);
+    font-size: 2vh;
+    align-items: right;
+    font-family: Poppins;
+  }
+  .card {
+    background-color: #00897b;
+    border-radius: 1vw;
+    margin: 10px;
+    max-width: 50vw;
+    flex: 1;
+    padding: 1vw;
+    transition: all .5s ease-in-out;
+    justify-content: center;
+  }
+  .card h4 {
+    display: inline-flex;
+    align-content: center;
+    font-size: 2vh;
+  }
+  
+  .text-header3{
+    font-size: 3vh;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-left: 5%;
+    background-color: #ffb300;
+    flex: 1;
+  }
+  .prueba{
+    font-size: 2vh;
+  }
+
+  .card2 h4 {
+    display: flex;
+    font-size: 3.3vw;
+    color: #005b4f;
+    border-bottom: 4px solid #ffb300;
+    align-items: center;
+  }
+
+  .card2 {
+    transition: all .5s ease-in-out;
+    justify-content: flex-start;
+    align-content: flex-start;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    margin: 10px;
+    max-width: 40vw;
+    border-radius: 3vw;
+  }
+
+  .texto p {
+    font-size: 2vh;
+    max-width: 60vw;
+    color: rgb(66, 62, 62);
+    padding: 1vw;
+  
   }
 }
 

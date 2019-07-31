@@ -22,7 +22,7 @@ class App extends Component {
         <Portada/>
         <Servicios/>
         <Quienes/>
-        <div className="Bar"><div className="footnote">Acacia SpA<br/>2019</div></div>
+        <div className="Bar"><div className="footnote">contacto@acacia.cl<br/>Acacia SpA<br/>2019</div></div>
       </div>
     );
   }
