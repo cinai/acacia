@@ -14,7 +14,7 @@ class App extends Component {
             <img src={logo} className="logo-image" alt="logo" />
             Acacia
           </div>
-          <ul class="navigation">
+          <ul className="navigation">
             <li><a href="#Servicios">Servicios</a></li>
             <li><a href="#Nosotros">Nosotros</a></li>
           </ul>
