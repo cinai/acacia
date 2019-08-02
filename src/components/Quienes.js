@@ -25,7 +25,7 @@ const Quienes = () => {
         <div className="integrantes">
           <div className="card2">
             <h4>
-            <img src={abelino} className="foto" alt="Abelino Jiménez" />Abelino Jimenez
+            <img src={abelino} className="foto" alt="Abelino Jiménez" />Abelino Jiménez
             </h4>
             <span className="prueba">
             PhD Electrical and Computer Engineering. <br/>
