@@ -355,7 +355,8 @@ html {
     border-radius: 0vw;
     margin: 10px;
     max-width: 40vw;
-    padding: 0vw;
+    min-width: 30vw;
+    padding: 1vw;
     flex: 2;
   }
 
