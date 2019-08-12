@@ -1,3 +1,17 @@
+## Para usar este repositorio
+
+Para usar este repositorio hay que tener instalado git y npm.
+1. Se abre la linea de comandos de git en la carpeta en que se quiere guardar el repositorio.
+2. Se guarda una copia local del repositorio utilizando:
+git clone
+3. Se dirige a la carpeta del repo
+cd acacia
+4. Se instalan las librerias de la aplicación
+npm install
+5. Se ejecuta la app en modo local
+npm start
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
