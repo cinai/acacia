@@ -1,6 +1,6 @@
 ## Para usar este repositorio
 
-Para usar este repositorio hay que tener instalado git y npm.
+Para usar este repositorio hay que tener instalado git y npm. Una vez que estén instalados, se sigue con los siguientes pasos: 
 1. Se abre la linea de comandos de git en la carpeta en que se quiere guardar el repositorio.
 2. Se guarda una copia local del repositorio utilizando:
 ### `git clone https://github.com/cinai/acacia.git`
