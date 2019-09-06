@@ -18,7 +18,7 @@ const Quienes = () => {
           Nuestro equipo fue ganador del Challenge organizado por Walmart Chile 
           “Prediccion de demandas para promociones”. 
           
-          De más de  equipos participantes, fuimos seleccionados como ganadores, 
+          De más de 40 equipos participantes, fuimos seleccionados como ganadores, 
           permitiendo implementar nuestra propuesta para la toma de decisiones de la empresa.
           </p>
         </div>
