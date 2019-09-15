@@ -293,7 +293,7 @@ html {
   }
 
   #App-logo {
-    font-size: 4vh;
+    font-size: 3vh;
     justify-content: center;
     padding-left: 0px;
     padding: 0px;
@@ -301,11 +301,13 @@ html {
     bottom:0px;
   }
   .logo-image {
-    height: 8vh;
-    padding-right:15vh;
+    height: 7vh;
+    padding-right:8vh;
   }
   .aver{
-    padding-top:2vh;
+    padding-top:2.8vh;
+    padding-right:4vh;
+    padding-bottom:0vh;
   }
   .navigation {
     list-style: none;
@@ -340,6 +342,7 @@ html {
     flex: 1;
     text-align: right;
     padding: 7vw;
+    
   }
   
   .text-header2{
@@ -371,10 +374,9 @@ html {
   .card {
     background-color: #2278ff;
     border-radius: 0vw;
-    margin: 10px;
     max-width: 40vw;
     min-width: 30vw;
-    padding: 2vw;
+    padding: 1vw;
     padding-left: 4vw;
     flex: 2;
   }
@@ -393,7 +395,7 @@ html {
     padding-left: 5%;
     background-color:  #454D66;
     flex: 1;
-    padding-top: 40%;
+    padding-top: 10%;
   }
   .text-header4{
     width: 100%;
@@ -401,6 +403,7 @@ html {
     flex-wrap: wrap;
     justify-content: left;
     padding: 0px;
+    flex: 3;
   }
   .prueba{
     font-size: 1.5vh;
