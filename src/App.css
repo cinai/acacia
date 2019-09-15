@@ -5,28 +5,35 @@ html {
 .App {
   text-align: center;
   background-color: rgb(253, 252, 252);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 #App-logo {
   font-size: 50px;
   flex: 4;
   display: inline-flex;
-  justify-content: left;
   padding-left: 20px;
-  display: flex;
+  display: flex-end;
+  margin-bottom: 0px;
+  text-align: end;
+  height: 105px;
 }
-
+.aver{
+  align-self: flex-end;
+  padding-left: 70px;
+}
 .logo-image {
-  height: 60px;
+  height: 100px;
+  padding: 2px;
+  position: absolute;
 }
 
 .App-header {
   background-color: #ffffff;
   z-index: 999;
   width: 100%;
-  color: grey;
-  font-family:  'Poppins', sans-serif;
+  color:  #454D66;
+  font-family:  'Aldrich', sans-serif;
   padding-top: 10px;
   position: fixed;
   display: flex;
@@ -37,7 +44,7 @@ html {
 .navigation {
   list-style: none;
   flex: 1;
-  color: grey;
+  color:  #454D66;
   font-size: 25px;
   display: flex;
   flex: flex-end;
@@ -46,7 +53,7 @@ html {
 }
 
 .navigation a {
-  color: grey;
+  color:  #454D66;
   text-decoration: none;
   padding-right: 20px;
   padding-left: 20px;
@@ -56,7 +63,7 @@ html {
   flex: 1;
 }
 .navigation li:hover {
-  border-bottom: 5px solid #ffb300;
+  border-bottom: 5px solid  #454D66;
   text-shadow: 0.1px 0.2px;
 }
 
@@ -72,32 +79,32 @@ html {
 .viewport-header {
   position: relative;
   width: 100%;
-  background-color: #00897bc5;
-  padding: 1%;
+  background-color: #004ecbc4;
   display: flex;
   margin-top: 90px;
-  align-items: center;
 }
 
 .text-header1{
   font-size: 2.5vw;
   width: 100%;
   color: #f4f4f4;
-  text-align: left;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   flex: 3;
   display: flex;
   padding: 7vw;
-  justify-content: left;
-  text-align: center;
+  justify-content: space-between;;
+  flex-direction: column;
 }
 
+.text-header1-texto{
+  flex: 1;
+}
 .text-header2{
   font-size: 3.5vw;
   color: #ffff;
   text-align: left;
-  font-family: Georgia;
-  background-color: #005b4fcc;
+  font-family: Roboto Slab;
+  background-color: rgba(34, 119, 255, 0.651);
   display: flex;
   padding: 4%;
   flex: 1;
@@ -126,10 +133,25 @@ html {
   justify-content: center;
 
 }
+.Barfoot {
+  position: relative;
+  background-color: #454D66;
+  z-index: 998;
+  width: 100%; /* Full width */
+  height:100%;
+  flex: 1;
+  display: flex;
+  font-size: 1vw;
+  font-weight: bold;
+  text-align: center;
+  justify-content: right;
+  justify-content: center;
+
+}
 .footnote {
   padding: 4%;
-  font-size: 3vh;
-  color: rgb(66, 62, 62);
+  font-size: 4vh;
+  color: rgb(253, 252, 252);
   align-content: center;
   text-align: center;
 }
@@ -145,9 +167,9 @@ html {
   position: relative;
   width: 100%;
   display: flex;
-  font-family: Georgia;
+  font-family: Roboto Slab;
   justify-content: left;
-  background-color: #00897b;
+  background-color: #2278ff;
 }
 
 .text-header3{
@@ -157,8 +179,8 @@ html {
   text-align: left;
   padding: 5%;
   padding-left: 40px;
-  background-color: #ffb300;
-  flex: 1;
+  background-color:  #454D66;
+  flex: 2;
 }
 
 .text-header4{
@@ -167,7 +189,7 @@ html {
   color: rgb(253, 252, 252);
   text-align: left;
   padding: 45px;
-  flex: 3;
+  flex: 4;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -197,10 +219,11 @@ html {
   margin: 10px;
   max-width: 40vw;
   border-radius: 3vw;
+  color: #454D66;
 }
 
 .card {
-  background-color: #00897b;
+  background-color: #2278ff;
   border-radius: 2vw;
   margin: 10px;
   max-width: 20vw;
@@ -215,19 +238,15 @@ html {
   align-content: center;
 }
 
-.card:hover {
-  transform: scale(1.06);
-}
-
 .card2 h4 {
   display: flexbox;
   font-size: 2vw;
-  color: #005b4f;
-  border-bottom: 4px solid #ffb300;
+  
+  border-bottom: 4px solid  #2278ff;
 }
 
 .prueba{
-  text-align: right;
+  text-align: left;
   float: right;
   font-size: 1.5vw;
   padding-left: 1vw;
@@ -251,7 +270,7 @@ html {
 
 .tercero h5 {
   font-size: 3vw;
-  background-color: #00897b;
+  background-color: #2278ff;
   color: rgb(253, 252, 252);
   font-style: italic;
   rotate: 10px;
@@ -282,6 +301,8 @@ html {
     justify-content: center;
     padding-left: 0px;
     padding: 0px;
+    text-align: end;
+    bottom:0px;
   }
   .logo-image {
     height: 6vh;
@@ -289,7 +310,7 @@ html {
   
   .navigation {
     list-style: none;
-    color: grey;
+    color:  #454D66;
     font-size: 2vh;
     padding: 0;
     justify-content: center;
@@ -299,7 +320,7 @@ html {
   }    
 
   .navigation a {
-    color: grey;
+    color:  #454D66;
     text-decoration: none;
   }
 
@@ -313,11 +334,11 @@ html {
   }
 
   .text-header1{
-    background-color: #00897b;
+    background-color: #2278ff;
     color: #f4f4f4;
     font-size: 6vw;
     text-align: left;
-    font-family: Georgia;
+    font-family: Roboto Slab;
     display: flex;
     flex: 1;
     text-align: right;
@@ -329,10 +350,10 @@ html {
     font-size: 5vh;
     color: #dddddd;
     text-align: left;
-    font-family: Georgia;
+    font-family: Roboto Slab;
     font-stretch: extra-expanded;
     padding: 4%;
-    background-color: #005b4f;
+    background-color: #2278ff;
     display: flex;
     flex: 1;
   }
@@ -347,11 +368,11 @@ html {
   }
   .footnote {
     font-size: 2vh;
-    font-family: Poppins;
+    font-family: 'Roboto Slab';
   }
 
   .card {
-    background-color: #00897b;
+    background-color: #2278ff;
     border-radius: 0vw;
     margin: 10px;
     max-width: 40vw;
@@ -372,7 +393,7 @@ html {
     color: rgb(255, 255, 255);
     text-align: left;
     padding-left: 5%;
-    background-color: #ffb300;
+    background-color:  #454D66;
     flex: 1;
     padding-top: 40%;
   }
@@ -394,8 +415,8 @@ html {
   .card2 h4 {
     display: flex;
     font-size: 3.3vw;
-    color: #005b4f;
-    border-bottom: 4px solid #ffb300;
+    color: #2278ff;
+    border-bottom: 4px solid  #454D66;
     align-items: center;
   }
 
@@ -436,7 +457,7 @@ html {
   width: 100%;
   color: #dddddd;
   text-align: left;
-  font-family: Georgia;
+  font-family: Roboto Slab;
   font-stretch: extra-expanded;
   padding: 5%;
   padding-top: 30%;
@@ -449,7 +470,7 @@ html {
   height: 100%;
   color: #dddddd;
   text-align: right;
-  font-family: Georgia;
+  font-family: Roboto Slab;
   font-stretch: extra-expanded;
   padding: 5%;
   padding-top: 30%;

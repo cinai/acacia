@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './images/flor.svg';
+import logo from './images/LogoAcacia_Imagen.png';
 import './App.css';
 import Portada from './components/Portada';
 import Quienes from './components/Quienes';
@@ -12,7 +12,7 @@ class App extends Component {
         <div className="App-header">
           <div id="App-logo">
             <img src={logo} className="logo-image" alt="logo" />
-            Acacia
+            <span className="aver">acac<font color="#2278ff">ia</font> </span>
           </div>
           <ul className="navigation">
             <li><a href="#Servicios">Servicios</a></li>
@@ -22,7 +22,8 @@ class App extends Component {
         <Portada/>
         <Servicios/>
         <Quienes/>
-        <div className="Bar"><div className="footnote">contacto@acacia.cl<br/>Acacia SpA<br/>2019</div></div>
+        <div className="Bar"></div>
+        <div className="Barfoot"><div className="footnote">contacto@acacia.cl</div></div>
       </div>
     );
   }

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../images/flor.svg';
 
 const Servicios = () => {
   return (
@@ -9,38 +8,33 @@ const Servicios = () => {
       <header className="viewport-header2">
         <span className="text-header3">
           <p>
-            Combinamos los últimos avances en Machine Learning para crear mejores soluciones
+          Combinamos los últimos avances en Machine Learning para crear mejores soluciones
           </p>
         </span>
         <span className="text-header4">
           <div className="card">
             <h4>
-              <img src={logo} className="logo" alt="logo" />Predicción de Demanda
+              Predicción de Demanda
             </h4>
             <span className="prueba">
-              ¿Cuál será la demanda en los siguientes períodos para que podamos planificarnos adecuadamente?
+              Determinar la demanda futura por períodos para la planificación productiva y comercial.
             </span>
           </div>
           <div className="card">
             <h4>
-              <img src={logo} className="logo" alt="logo" />Segmentación de Clientes
+              Segmentación de Clientes
             </h4>
             <span className="prueba">
-              ¿Cuáles son las características que describen a nuestros distintos tipos de clientes y cómo usarlas para ofrecer un mejor servicio?
+              Identificación de las características que describen el negocio y que permiten ofrecer un mejor servicio
             </span>
           </div>
           <div className="card">
             <h4>
-              <img src={logo} className="logo" alt="logo" />Customer Targeting
+              Customer Targeting
             </h4>
             <span className="prueba">
-            ¿Cómo planificar promociones u ofertas a potenciales clientes en base a datos históricos de clientes anteriores?
+            Optimización para el proceso de planificación de venta, promociones u ofertas a potenciales clientes en base a datos históricos de consumo y compra de servicios/productos.
             </span>
-          </div>
-          <div className="card">
-            <h4>
-            <img src={logo} className="logo" alt="logo" />Recomendación de Productos
-            </h4>
           </div>
         </span>
       </header>
