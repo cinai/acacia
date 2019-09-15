@@ -187,7 +187,7 @@ html {
   flex: 4;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
 }
 
 .logo{
@@ -289,6 +289,7 @@ html {
 @media (max-width: 767px) {
   .App-header {
     display: block;
+    height: 110px;
   }
 
   #App-logo {
@@ -300,9 +301,13 @@ html {
     bottom:0px;
   }
   .logo-image {
-    height: 3vh;
+    height: 8vh;
+    padding-right:90px;
   }
-  
+  .aver{
+    padding-left: 45px;
+    padding-top: 17px;
+  }
   .navigation {
     list-style: none;
     color:  #454D66;
@@ -311,7 +316,6 @@ html {
     justify-content: center;
     align-content: center;
     width:100%;
-
   }    
 
   .navigation a {
@@ -331,24 +335,24 @@ html {
   .text-header1{
     background-color: #2278ff;
     color: #f4f4f4;
-    font-size: 6vw;
+    font-size: 3vh;
     text-align: left;
     font-family: Roboto Slab;
     display: flex;
     flex: 1;
     text-align: right;
-    padding: 8vw;
+    padding: 7vw;
   }
   
   .text-header2{
     margin-top: 14vh;
-    font-size: 5vh;
-    color: #dddddd;
+    font-size: 4vh;
+    color: #f4f4f4;
     text-align: left;
     font-family: Roboto Slab;
     font-stretch: extra-expanded;
-    padding: 4%;
-    background-color: #2278ff;
+    padding: 5%;
+    background-color: #004dcb;
     display: flex;
     flex: 1;
   }
@@ -372,7 +376,8 @@ html {
     margin: 10px;
     max-width: 40vw;
     min-width: 30vw;
-    padding: 1vw;
+    padding: 2vw;
+    padding-left: 4vw;
     flex: 2;
   }
 
@@ -396,11 +401,11 @@ html {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     padding: 0px;
   }
   .prueba{
-    font-size: 2vh;
+    font-size: 1.5vh;
     text-align: right;
     float: right;
     padding: 0px;
@@ -410,8 +415,8 @@ html {
   .card2 h4 {
     display: flex;
     font-size: 3.3vw;
-    color: #2278ff;
-    border-bottom: 4px solid  #454D66;
+    color: #454D66;
+    border-bottom: 4px solid #2278ff;
     align-items: center;
   }
 
