@@ -1,14 +1,14 @@
 ## Para usar este repositorio
 
 Para usar este repositorio hay que tener instalado git y npm. Una vez que estén instalados, se sigue con los siguientes pasos: 
-1. Se abre la linea de comandos de git en la carpeta en que se quiere guardar el repositorio.
-2. Se guarda una copia local del repositorio utilizando:
+1. Abrir la linea de comandos de git en la carpeta en que se quiere guardar el repositorio.
+2. Guardar una copia local del repositorio utilizando:
 ### `git clone https://github.com/cinai/acacia.git`
-3. Se dirige a la carpeta del repo
+3. Dirigirse a la carpeta del repo
 ### `cd acacia`
-4. Se instalan las librerias de la aplicación
+4. Instalar las librerias de la aplicación
 ### `npm install`
-5. Se ejecuta la app en modo local
+5. Ejecutar la app en modo local
 ### `npm start`
 
 ## Documentación de create react app
