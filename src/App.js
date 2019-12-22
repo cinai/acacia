@@ -4,6 +4,7 @@ import './App.css';
 import Portada from './components/Portada';
 import Quienes from './components/Quienes';
 import Servicios from './components/Servicios';
+import Button from '@material-ui/core/Button';
 
 class App extends Component {
   render() {
@@ -17,6 +18,8 @@ class App extends Component {
           <ul className="navigation">
             <li><a href="#Servicios">Servicios</a></li>
             <li><a href="#Nosotros">Nosotros</a></li>
+            <li>
+              <Button id="boton-inicio" variant="contained" color="primary">Iniciar sesión</Button></li>
           </ul>
         </div>
         <Portada/>

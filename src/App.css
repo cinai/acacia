@@ -48,7 +48,8 @@ html {
   color:  #454D66;
   font-size: 20px;
   display: flex;
-  flex: flex-end;
+  justify-content: flex-end;
+  align-items: center;
   padding-right: 30px;
 }
 
@@ -486,4 +487,15 @@ html {
   justify-content: left;
   top: 7vw;
   padding-right: 10%;
+}
+
+#boton-inicio{
+  width: 150px;
+  font-family: Roboto Slab;
+  background-color: #004ecbc4;
+}
+
+#boton-inicio:hover {
+  background-color: #2278ff;
+  transition-duration: 0.2s;
 }
