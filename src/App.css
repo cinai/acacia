@@ -227,6 +227,7 @@ html {
   padding: 1vw;
   transition: all .5s ease-in-out;
   justify-content: center;
+  border: 1px solid rgba(0,0,0,0);
 }
 
 .card h4 {
@@ -235,9 +236,8 @@ html {
 }
 
 .card2 h4 {
-  display: flexbox;
+  display: flex;
   font-size: 2vw;
-  
   border-bottom: 4px solid  #2278ff;
 }
 
