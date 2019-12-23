@@ -2,18 +2,23 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     background-color: white;
-    padding-top: 15vh;
+    height: 100vh;
+    font-family: Roboto Slab;
+    background-color: rgba(248, 248, 248, 0.493);
 }
 
 .caja-login{
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(255, 255, 255);
     width: 400px;
+    height: 300px;
+    margin-top: 20vh;
+    min-width: 400px;
 }
 
 .card-header {
     text-align: center;
+    color: #767782;
 }
 
 .card-body {
@@ -28,11 +33,14 @@
 #boton-inicio-sesion{
     flex: 1;
     margin: 15px;
-    background-color: rgb(29, 206, 82);
+    background-color: #004ecbc4;
     font-weight: bold;
-    width: 200px;
 }
-
+  
+#boton-inicio-sesion:hover {
+    background-color: #2278ff;
+    transition-duration: 0.2s;
+}
 .card-header > svg {
     padding-right: 16px;
 }
@@ -45,4 +53,23 @@
 .form-group{
     flex: 1;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group > input {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: .9em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(231, 228, 228);
+}
+
+.logo-image-inicio{
+    height: 80%;
+    position: absolute;
+    z-index: -1;
+    margin-left: 33vw;
 }

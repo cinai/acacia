@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { firebaseConnect } from 'react-redux-firebase';
 import PropTypes from 'prop-types';
 import './Login.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
+import Button from '@material-ui/core/Button';
+import logo from '../../images/LogoAcacia_Imagen.png';
 
 class Login extends Component {
     state = { 
@@ -37,48 +41,52 @@ class Login extends Component {
 
 
     render() { 
-        return ( 
-            <div className="login">
-                <div className="caja-login card">
-                    <div className="card-body">
-                        <h2 className="text-center py-4">
-                            <i className="fas fa-lock"></i> {''}
-                            Iniciar Sesión
-                        </h2>
+        return (
+            <div>
+                <img src={logo} className="logo-image-inicio" alt="logo" />
+                <div className="login">
+                    <div className="card caja-login">
+                        <div className="card-body">
+                            <h2 className="card-header">
+                                <FontAwesomeIcon icon={faUser} />
+                                Ingrese sus datos
+                            </h2>
 
-                        <form
-                            onSubmit={this.iniciarSesion}
-                        >
-                            <div className="form-group">
-                                <label>Email:</label>
-                                <input 
-                                    type="email"
-                                    className="form-control"
-                                    name="email"
-                                    required
-                                    value={this.state.email}
-                                    onChange={this.leerDatos}
-                                />
-                            </div>
+                            <form
+                                onSubmit={this.iniciarSesion}
+                                className="formulario"
+                            >
+                                <div className="form-group">
+                                    <label>Email:</label>
+                                    <input 
+                                        type="email"
+                                        className="form-control"
+                                        name="email"
+                                        required
+                                        value={this.state.email}
+                                        onChange={this.leerDatos}
+                                    />
+                                </div>
 
-                            <div className="form-group">
-                                <label>Password:</label>
-                                <input 
-                                    type="password"
-                                    className="form-control"
-                                    name="password"
-                                    required
-                                    value={this.state.password}
-                                    onChange={this.leerDatos}
-                                />
-                            </div>
+                                <div className="form-group">
+                                    <label>Password:</label>
+                                    <input 
+                                        type="password"
+                                        className="form-control"
+                                        name="password"
+                                        required
+                                        value={this.state.password}
+                                        onChange={this.leerDatos}
+                                    />
+                                </div>
 
-                            <input 
-                                type="submit"
-                                className="btn btn-success btn-block"
-                                value="Inicar Sesión"
-                            />
-                        </form>
+                                <Button 
+                                    type="submit"
+                                    id="boton-inicio-sesion"
+                                    variant="contained" color="primary"
+                                >Iniciar Sesión</Button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
