@@ -86,6 +86,8 @@ class Login extends Component {
                                     variant="contained" color="primary"
                                 >Iniciar Sesión</Button>
                             </form>
+                            <div className="card-footer">Al iniciar sesión acepta nuestros <a href="https://www.google.cl">Términos y condiciones</a>.</div>
+                            <div className="card-footer">¿No está registrado? <a href="https://www.google.cl">Crear cuenta</a></div>
                         </div>
                     </div>
                 </div>

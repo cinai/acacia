@@ -4,7 +4,7 @@ import store from './store';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Presentacion from './components/Presentacion'
-import Login from './components/Login/Login'
+import Login from './components/Inicio/Inicio'
 
 class App extends Component {
   render() {
