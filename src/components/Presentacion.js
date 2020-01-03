@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import logo from '../images/LogoAcacia_Imagen.png';
+import logo from '../acacia_regular.png';
 import Portada from './Portada';
 import Quienes from './Quienes';
 import Servicios from './Servicios';
@@ -14,7 +14,6 @@ class Presentacion extends Component {
             <div className="App-header">
                 <div id="App-logo">
                     <img src={logo} className="logo-image" alt="logo" />
-                    <span className="aver">acac<font color="#2278ff">ia</font> </span>
                 </div>
                 <ul className="navigation">
                     <li><a href="#Servicios">Servicios</a></li>
