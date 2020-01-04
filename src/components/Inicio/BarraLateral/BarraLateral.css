@@ -42,10 +42,12 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+  color: #ddd;
 }
 
 .lista-proyectos {
   display: flex;
+  background-color: #374163;
 }
 
 .lista-proyectos a {
@@ -116,3 +118,14 @@
   font-family: 'Roboto Slab', sans-serif;
 }
   
+#menu-list-grow {
+  text-transform: initial;
+}
+
+#menu-list-grow > li {
+  font-size: 1em;
+}
+
+li > svg {
+  padding: 6px;
+} 
