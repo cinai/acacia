@@ -32,3 +32,18 @@
     color: white;
     padding: 7px;
 }
+
+.plataforma-user {
+    flex: 1;
+}
+
+.plataforma-user-icon {
+    font-size: 30px;
+}
+
+.plataforma-titulo {
+    flex: 10;
+    display: flex;
+    flex-direction: row;
+    color: #262d44;
+}
