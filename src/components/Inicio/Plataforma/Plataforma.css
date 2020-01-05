@@ -47,3 +47,49 @@
     flex-direction: row;
     color: #262d44;
 }
+
+.dashboard-fila {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: left;
+}
+.dashboard-kpi {
+    text-align: left;
+    margin-right: 20px;
+}
+.dashboard-tarjeta-verde{
+    background-color: #7af86e;
+    width: 180px;
+    height: 180px;
+    font-size: 1.4em;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 15%;
+    margin-right: 20px;
+    padding: 10px;
+
+}
+
+.dashboard-tarjeta-roja{
+    background-color: #f53e3e;
+    width: 180px;
+    height: 180px;
+    font-size: 1.4em;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 15%;
+    margin-right: 20px;
+}
+
+.dashboard-tarjeta-amarilla{
+    background-color: #f5e33e;
+    width: 180px;
+    height: 180px;
+    font-size: 1.4em;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 15%;
+    margin-right: 20px;
+}

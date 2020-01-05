@@ -10,6 +10,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
@@ -17,6 +18,12 @@ import Popper from '@material-ui/core/Popper';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
 import Tooltip from '@material-ui/core/Tooltip';
+import Datos from '../Datos/Datos';
+import Modelo from '../Modelo/Modelo';
+import Prediccion from '../Prediccion/Prediccion';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
 
 
 function TabPanel(props) {
@@ -56,6 +63,20 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     marginRight: theme.spacing(2),
+  },
+  card: {
+    minWidth: 275,
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
   },
 }));
 
@@ -149,20 +170,76 @@ const Plataforma = props => {
             <Tab label="Dashboard" {...a11yProps(0)} />
             <Tab label="Datos" {...a11yProps(1)} />
             <Tab label="Modelos" {...a11yProps(2)} />
-            <Tab label="Predicción" {...a11yProps(2)} />
+            <Tab label="Predicción" {...a11yProps(3)} />
           </Tabs>
         </AppBar>
       </div>
     </div>
     <div className="plataforma-cuerpo">
       <TabPanel value={value} index={0}>
-        Item One
+        <div className="dashboard-descripcion">
+          <Card className={classes.card}>
+            <CardContent>
+              <Typography className={classes.title} color="textSecondary" gutterBottom>
+                Descripción del proyecto
+              </Typography>
+              <Typography variant="h5" component="h2">
+                Predicción de demanda de medicamentos e insumos
+              </Typography>
+              <Typography className={classes.pos} color="textSecondary">
+                12000 SKU
+              </Typography>
+              <Typography variant="body2" component="p">
+                Permite visualizar la demanda histórica y obtener la predicción de la demanda de cada SKU.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">Ir a predecir!</Button>
+            </CardActions>
+          </Card>
+        </div>
+        <div className="dashboard-fila">
+        <div className="dashboard-kpi">
+            <Card className={classes.card}>
+              <CardContent>
+                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                  KPIs del proyecto
+                </Typography>
+                <Typography variant="h5" component="h2">
+                  Indicadores de rendimiento
+                </Typography>
+                <Typography className={classes.pos} color="textSecondary">
+                  Por ejemplo por SKU u otro nivel de agrupación
+                </Typography>
+                <Typography variant="body2" component="p">
+                  Información sobre la performance de los modelos.
+                  <br></br>
+                  Alertas sobre el rendimiento de los modelos.
+                </Typography>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="dashboard-tarjeta-roja">
+            <h4>32 SKU <br></br><small>sin stock</small></h4>
+            <Button variant="contained" size="small">Check!</Button>
+          </div>
+          <div className="dashboard-tarjeta-amarilla">
+            <h4>856 SKU <br></br><small>bajo stock</small></h4>
+            <Button variant="contained" size="small">Check!</Button>
+          </div>
+          <div className="dashboard-tarjeta-verde">
+            <h4>11112 SKU<br></br> <small>stock suficiente</small></h4>
+          </div>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <Datos></Datos>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <Modelo></Modelo>
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <Prediccion></Prediccion>
       </TabPanel>
     </div>
   </div>
