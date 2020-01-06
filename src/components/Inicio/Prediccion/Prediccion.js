@@ -97,15 +97,6 @@ const Prediccion = () => {
                   <option value="Modelo 2">{"Modelo 2"}</option>
                 </select>
               </div>
-              <div className="contenedor-inputs">
-                <label htmlFor="Tipo de Material">SKU:</label>
-                <select id="input_tipom">
-                  <option value="SKU 1">{"SKU 1"}</option>
-                  <option value="SKU 2">{"SKU 2"}</option>
-                  <option value="SKU 3">{"SKU 3"}</option>
-                  <option value="SKU 4">{"SKU 4"}</option>
-                </select>
-              </div>
             </div>
           </Typography>
           <div className="boton-descarga">
