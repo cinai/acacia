@@ -16,6 +16,8 @@ html {
   display: flex-end;
   text-align: end;
 }
+
+
 .aver{
   align-self: flex-end;
   padding-left: 85px;
@@ -31,7 +33,7 @@ html {
   background-color: #ffffff;
   z-index: 999;
   width: 100%;
-  height: 80px;
+  height: 60px;
   color:  #454D66;
   font-family:  'Aldrich', sans-serif;
   padding-top: 10px;
@@ -49,6 +51,7 @@ html {
   font-size: 20px;
   display: flex;
   flex: flex-end;
+  align-items: center;
   padding-right: 30px;
 }
 
@@ -76,7 +79,7 @@ html {
   width: 100%;
   background-color: #004ecbc4;
   display: flex;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .text-header1{
@@ -295,9 +298,8 @@ html {
   #App-logo {
     font-size: 3vh;
     justify-content: center;
-    padding-left: 0px;
+    margin-left: 3rem;
     padding: 0px;
-    text-align: end;
     bottom:0px;
   }
   .logo-image {
